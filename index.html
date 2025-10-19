@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    
-  </head>
-  <body>
-    <h1>hello!!</h1>
-  </body>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>HELLO!!!可以给我留言 。</title>
+  <style>
+    body { font-family: Arial; background: #ffeaa7; padding: 40px; }
+    h1 { color: #2d3436; }
+    form { background: white; padding: 20px; border-radius: 10px; max-width: 400px; }
+    input, textarea { width: 100%; margin: 10px 0; padding: 10px; }
+    button { background: #00b894; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>HIIIII</h1>
+  <form name="guestbook" method="POST" data-netlify="true">
+    <input type="text" name="name" placeholder="你的名字？" required>
+    <textarea name="message" placeholder="留言内容" required></textarea>
+    <button type="submit">发送</button>
+  </form>
+</body>
 </html>
